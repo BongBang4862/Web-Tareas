@@ -1,0 +1,9 @@
+<h1>Tarea : <%= @task.title %></h1>
+
+<h3>Description</h3>
+<p><%= @task.details %></p>
+
+<h3>Completed</h3>
+<p><%= @task.completed? ? 'esta lista' : 'No esta lista' %></p>
+
+<%= link_to 'Regresar a la lista de Tareas', tasks_path %>
